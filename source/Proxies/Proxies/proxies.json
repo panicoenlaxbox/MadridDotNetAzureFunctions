@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+    "Proxy1": {
+      "matchCondition": {
+        "route": "my_proxy/{id}",
+        "methods": [
+          "GET"
+        ]
+      },
+      "backendUri": "https://localhost/%Prefix%Function1/{id}",
+      "responseOverrides": {
+        "response.headers.x-age": "{request.querystring.age}"
+      }
+    },
+    "Proxy2": {
+      "matchCondition": {
+        "route": "info",
+        "methods": [
+          "GET"
+        ]
+      },
+      "responseOverrides": {
+        "response.statusCode": "200",
+        "response.body": "panicoenlaxbox"
+      }
+    } 
+  }
+}
