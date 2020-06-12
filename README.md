@@ -1,8 +1,3 @@
----
-title: "MadridDotNet Azure Functions"
-tags: ""
----
-
 # MadridDotNet Azure Functions
 
 [Azure Functions: "cosas que le diría a mi yo del pasado"](https://www.meetup.com/es-ES/madriddotnet/events/271058715/)
